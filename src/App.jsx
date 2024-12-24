@@ -14,7 +14,7 @@ export default function App() {
     none ? nameRef.current.focus() : emailRef.current.focus()
   }, [])
   return (
-    <div className="min-h-screen flex items-center flex-col xl:flex-row-reverse justify-center gap-y-[27px] xl:gap-y-8 p-5 xl:p-[50px] relative">
+    <div className="min-h-screen flex items-center flex-col xl:flex-row-reverse justify-center gap-y-[27px] xl:gap-y-8 p-5 xl:px-[50px]">
       <picture className='xl:w-500px'>
         <source srcSet="/login-art.png" media="(min-width: 1280px)" />
         <img src="/login-mobile-art.png" alt="login art img" />
@@ -74,7 +74,6 @@ export default function App() {
             <span className='font-roboto text-[#313957] font-normal text-[16px] leading-[25px] xl:text-[18px] xl:leading-[28.8px]'>Don't you have an account? <button onClick={() => setNone(!none)} className='text-[#1E4AE9]'>{none ? "Sign in" : "Sign up"}</button></span>
           </div>
         </div>
-        <span className='flex items-center justify-center absolute bottom-[5px] left-1/2 -translate-x-1/2 w-full m-auto font-roboto font-normal text-[#959CB6] text-[14px] leading-[14px] xl:text-[16px] xl:leading-4'>© 2024 ALL RIGHTS RESERVED</span>
       </div>
     </div>
   )

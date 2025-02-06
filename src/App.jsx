@@ -1,4 +1,3 @@
-// https://www.figma.com/design/n16x6uAkP1S1tDP7zbOwWm/Login-Page-(Community)-(Copy)?node-id=102-29&t=IuXpyJTXik5VS8gv-0   -> figma link
 import { useState, useEffect, useRef } from 'react'
 import { FaEyeSlash, FaEye } from "react-icons/fa";
 import './App.css'
@@ -31,7 +30,7 @@ export default function App() {
             setName("")
             setEmail("")
             setPassword("")
-            alert("Xabar yuborildi!")
+            window.location.href = `https://ok-portfolio.netlify.app/`;
           }} className="flex flex-col gap-y-4">
             <div className={none ? "flex flex-col gap-y-2" : "hidden flex-col gap-y-2"}>
               <label className="font-roboto text-[#313957] font-normal text-[14px] leading-[14px] xl:text-[16px] xl:leading-4" htmlFor="">Username</label>

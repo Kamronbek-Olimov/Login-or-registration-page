@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { FaEyeSlash, FaEye } from "react-icons/fa";
 import './App.css'
 export default function App() {
-  const [eye, setEye] = useState(false)
+  const [eye, setEye] = useState(true)
   const emailRef = useRef(null)
   const nameRef = useRef(null)
   const [name, setName] = useState('')
